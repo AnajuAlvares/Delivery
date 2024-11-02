@@ -1,0 +1,105 @@
+body {
+    background-color: #87c982;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    height: 55px;
+    position: fixed;
+    top: 0;
+}
+
+nav{
+    display: inline-flex;
+    height: 5.7vh;
+    width: 100vw;
+}
+
+.logotxt {
+    display: flex;
+    font-size: 22px; 
+    margin: 0; 
+    color: #00371c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    width: 500px;
+}
+
+main {
+    margin-top: 55px;
+    padding: 0;
+    height: 100%;
+    display: flex;
+}
+
+#fotoloja {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+#fotoloja>img {
+    width: 80%;
+    height: 653px;
+    object-fit: cover;
+}
+
+#logotexto {
+    width: 370px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00371c;
+    font-weight: 700;
+    margin-left: 105px;
+    text-align: justify;
+    margin-top: 55px;
+}
+
+.menu-faketrigger{
+    position: absolute;
+    z-index: 1000;
+    width: 25px;
+    height: 20px;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu ul {
+    position: absolute;
+    background-color: rgb(221, 221, 221);
+    z-index: 998;
+    left: 0;
+    top: 33px;
+    padding: 1rem;
+    height: 100vh;
+    width: 250px;
+    text-align: justify;
+    margin-left: -300px;
+    border-radius: 0rem  1rem;
+}
+
+.menu-faketrigger:checked ~ ul{
+    margin-left: 0;
+    transition: 2s;
+}
+
+.menu ul li > a {
+    text-decoration: none;
+    color: #00371C;
+    font-weight: 500;
+}
+
+.menu > ul > li {
+    list-style: none;
+    background-color: #87C982 ; 
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+}
